@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./style.css">
+	
+	</head>
+	<body>
+		<header>
+			<h1>My List</h1>
+		</header>
+		
+
+		
+	
+	<form>
+	
+		<!--text box and submit button-->
+		<input type="text" class="task-input">
+		<button class="task-button" type="submit">
+			<i class="fas fa-plus-square"></i>
+		</button>
+		
+		<!--Select-->
+		<div class='select'>
+			<select name='task' class='filter-task'>
+				<option value="all">All</option>
+				<option value="completed">Completed</option>
+				<option value="uncompleted">Uncompleted</option>
+			</select>
+		</div>
+	</form>
+	<div class="task-container">
+		<ul class ="task-list">
+			
+		</ul>
+	</div>
+	
+	<!--	The javascript will create a div with these elements whenever the button
+	is pressed. They are then appended to the task-list
+	<div class="task">
+		<li></li>
+		<button></button>
+	</div>
+	-->
+	
+	
+	<script src="./app.js"></script>
+	
+	</body>
+</html>
